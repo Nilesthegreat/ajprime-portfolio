@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AJ Prime | Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header-row">
+        <img src="img/image1.jpeg" alt="AJ Prime Logo" class="logo" />
+        <div>
+          <h1>AJ Prime</h1>
+          <p>Photography & Videography</p>
+        </div>
+      </header>
+      
+
+  <section class="about">
+    <h2>About AJ Prime</h2>
+    <div class="about-container">
+      <img src="img/image3.jpeg" alt="AJ Prime Photo" class="profile-pic">
+      <div>
+        <p><strong>AJ Prime</strong> is a passionate and experienced photographer & videographer with over <strong>5 years</strong> of professional work in events, portraits, product shoots, and content creation.</p>
+        <p><em>HND in Computer Science. Self-taught creative. Dedicated to capturing powerful visual stories.</em></p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="grid">
+      <img src="img/image3.jpeg" alt="Work 1">
+      <img src="img/nel6.jpg" alt="Work 2">
+      <img src="img/image4.jpeg" alt="Work 3">
+      <img src="img/nel9.jpeg" alt="Work 4">
+      <img src="img/hero.jpg" alt="Work 5">
+      <img src="img/image2.jpeg" alt="Work 6">
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Clients Say</h2>
+    <blockquote>
+      <p>“AJ captured every moment with precision and style. Couldn't be happier!”</p>
+      <cite>– Kemi & Tunde</cite>
+    </blockquote>
+    <blockquote>
+      <p>“Professional, creative, and always on time. My brand loved working with him.”</p>
+      <cite>– Bolaji, Fashion CEO</cite>
+    </blockquote>
+  </section>
+
+  <section class="gear">
+    <h2>My Creative Toolkit</h2>
+    <p><em>Sony A7 III | 50mm f/1.8 | DJI Gimbal | Adobe Premiere Pro | Lightroom</em></p>
+  </section>
+  
+  
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ajprime@example.com">ajprime@example.com</a></p>
+    <p>Phone: <a href="tel:+2347087342583">+234 708 734 2583</a></p>
+    <a href="https://wa.me/2347087342583" class="book-now" target="_blank">
+        <img src="img/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+        Book Now
+      </a>
+      
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AJ Prime. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+  
+    sections.forEach(sec => observer.observe(sec));
+  </script>
+  
+</body>
+</html>
